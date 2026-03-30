@@ -1,55 +1,70 @@
 # Zaher Khateeb | AI/ML Engineer
-
-**Founder of [AgentiCraft](https://agenticraft.ai)** — infrastructure layer for production multi-agent systems.
-
+ 
+**Founder of [AgentiCraft](https://agenticraft.ai)** — an 8-layer service mesh for production multi-agent systems.
+ 
 I specialize in multi-agent systems architecture, LLM infrastructure, and distributed systems reliability. My work sits at the intersection of formal methods and production engineering — building systems that are provably correct, not just empirically okay.
-
+ 
 ---
-
+ 
+### What I've Built
+ 
+**[AgentiCraft](https://agenticraft.ai)** — designed and built solo over 18 months:
+ 
+- **Data Plane (Layer 2):** ~70K-line Rust proxy across 7 crates — 28-layer middleware pipeline, Thompson Sampling routing across 17 LLM providers via PyO3, MCP/A2A codec handlers, CUSUM circuit breakers. 1,340+ tests, zero clippy warnings.
+- **Control Plane (Layer 3):** 40+ Python mesh services, 50+ agent presets, 9 communication backends
+- **Runtime (Layer 4):** Go-based Kubernetes operator, Docker, subprocess, and edge adapters
+- **Foundation (Layer 0):** Formal verification engine — CSP process algebra, multiparty session types, CTL model checking, probabilistic verification. **[Open source](https://github.com/agenticraft/agenticraft-foundation)** (1,300+ tests, 8 modules, Apache 2.0)
+- **Working Product (Layer 7):** Multi-agent Telegram bot with 3 agents (financial, calendar, research), persistent memory, HITL approval workflows
+ 
+Full architecture spans Layers 0–7 with NATS transport (L1), craft CLI and SDK (L5), and declarative app framework (L6).
+ 
+---
+ 
 ### Current Research
-
+ 
 **Fault-Dependent Resilience in Multi-Agent LLM Systems**
-
+ 
 Extending classical network reliability theory to stochastic agent quality. The core result: an iff characterization of when topology choice actually matters — crash-stop faults make all mesh topologies equivalent (a mathematical identity), while Byzantine faults break that equivalence in ways determined by the coordination protocol, not the graph structure.
-
-Validated across ~34,000 LLM experiments spanning 13 coordination topologies, two fault regimes, two task domains, and two model generations. Preparing for submission to a top-tier ML systems venue.
-
+ 
+Validated across ~34,000 LLM experiments spanning 13 coordination topologies, two fault regimes, two task domains, and two model generations.
+ 
 **Standalone libraries from this research:**
-
+ 
 | Library | Description |
 |---------|-------------|
-| [stochastic-circuit-breaker](https://github.com/zahere/stochastic-circuit-breaker) | CUSUM-optimal circuit breaker for LLM agents and stochastic systems. 4-state FSM with statistically principled degradation detection and provably minimax detection delay. |
-| [reliability-polynomials](https://github.com/zahere/reliability-polynomials) | Generalized reliability polynomials where coefficients encode quality, not just connectivity. Fault-dependent crossover analysis, three theorems. |
-
+| [stochastic-circuit-breaker](https://github.com/zahere/stochastic-circuit-breaker) | CUSUM-optimal circuit breaker for LLM agents and stochastic systems. 4-state FSM with provably minimax detection delay. |
+| [reliability-polynomials](https://github.com/zahere/reliability-polynomials) | Generalized reliability polynomials where coefficients encode quality, not just connectivity. Fault-dependent crossover analysis. |
+ 
 ---
-
+ 
 ### Technical Focus
-
+ 
 **Multi-Agent Systems** — mesh coordination architecture, fault-dependent topology selection, Byzantine fault tolerance for LLM systems, stochastic service mesh, MCP/A2A protocol integration
-
+ 
 **Formal Methods** — session type theory for deadlock-freedom guarantees, runtime property verification, CSP process algebra, refinement checking
-
+ 
 **LLM Infrastructure** — provider-agnostic inference abstraction, statistical circuit breakers with CUSUM-optimal change detection, quality-weighted reliability theory
-
+ 
 **Distributed Systems** — consensus protocols, fault injection and fault modeling, observability, Kubernetes-native deployment
-
+ 
 ---
-
+ 
 ### Tech Stack
-
-**Languages:** Python (expert), C++, TypeScript, SQL, Bash
-
+ 
+**Languages:** Python, Rust, Go, C++, TypeScript, SQL, Bash
+ 
 **AI/ML:** PyTorch, RAG, fine-tuning (LoRA, QLoRA), LLM evaluation, OpenTelemetry
-
-**Infrastructure:** Kubernetes, Docker, Helm, CI/CD, service mesh, PostgreSQL, Redis, Qdrant
-
+ 
+**Infrastructure:** Kubernetes, Docker, Helm, NATS JetStream, gRPC/Protobuf, Nuitka, CI/CD, PostgreSQL, Redis, Qdrant
+ 
 **Cloud:** AWS, GCP, Azure, Nebius AI Cloud
-
+ 
 ---
-
+ 
 ### Background
-
+ 
 - B.Sc. Industrial Engineering & Management (Data Science concentration) — Tel Aviv University
+- AI Performance Engineering — Nebius Academy, Tel Aviv University (current, 2026)
 - Advanced Data Science & AI Program — Nebius Academy (Y-DATA), Tel Aviv University
 - Previously: AI & Infrastructure Engineer at Visual Arena (Gothenburg, Sweden)
 
