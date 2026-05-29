@@ -1,12 +1,12 @@
 # Zaher Khateeb | AI/ML Engineer
 
-> **Multi-agent systems • LLM infrastructure • Formal methods**
+> **AGNTCY-native agent infrastructure • Multi-agent systems • LLM infrastructure • Formal methods**
 
-**Founder of [AgentiCraft](https://agenticraft.ai)** — an 8-layer service mesh for production multi-agent AI systems. Solo-built end-to-end across Rust, Python, Go, and TypeScript.
+**Founder of [AgentiCraft](https://agenticraft.ai)** — an AGNTCY-native, 8-layer service mesh for production multi-agent AI systems. Solo-built end-to-end across Rust, Python, Go, and TypeScript.
 
 I work at the intersection of formal methods and production engineering — building systems that are provably correct, not just empirically okay.
 
-[![Open to Senior AI/ML + Platform Engineering roles](https://img.shields.io/badge/Status-Open_to_opportunities-22C55E?style=for-the-badge)](mailto:zaherekh@gmail.com)
+[![Founder — open to the right opportunities](https://img.shields.io/badge/Founder-open_to_the_right_opportunities-0D9488?style=for-the-badge)](mailto:zaherekh@gmail.com)
 [![Website](https://img.shields.io/badge/agenticraft.ai-0D9488?style=for-the-badge)](https://agenticraft.ai)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/zahere/)
 
@@ -14,10 +14,11 @@ I work at the intersection of formal methods and production engineering — buil
 
 ## What I've Built
 
-**[AgentiCraft](https://agenticraft.ai)** — 8-layer production platform for multi-agent AI:
+**[AgentiCraft](https://agenticraft.ai)** — AGNTCY-native, 8-layer production platform for multi-agent AI:
 
-- **Unified inference across 17 LLM providers** with Thompson Sampling routing and per-destination circuit breakers — **32% cost reduction** in production
-- **MCP/A2A protocol interoperability layer** with native codec handlers — **45% reduction in redundant LLM calls** through lossless bidirectional translation
+- **AGNTCY-native across the full stack** — OASF agent schemas, a federated discovery directory, W3C Verifiable Credentials identity, and SLIM messaging, implemented end-to-end in Rust + Python (the Linux Foundation's "Internet of Agents" standard, contributed by Cisco)
+- **Unified inference across 18 LLM providers** with Thompson Sampling routing and per-destination circuit breakers — cutting inference cost through provider routing + caching
+- **MCP/A2A protocol interoperability layer** with native codec handlers — cutting redundant LLM calls through lossless bidirectional translation
 - **Full-stack platform** — FastAPI control plane, Next.js dashboard on Vercel, Python and TypeScript SDKs (Apache 2.0)
 - **Formal verification foundation** — CSP process algebra, multiparty session types, CTL model checking, probabilistic verification ([open source on PyPI](https://github.com/agenticraft/agenticraft-foundation), Apache 2.0)
 - **Shipped multi-agent Telegram bot** — 6 domain agents, persistent memory, human-in-the-loop approvals, deployed to production via Docker Compose with CI/CD
@@ -62,7 +63,7 @@ Validated across **~34,000 LLM experiments** spanning 13 coordination topologies
 
 ## Background
 
-- **Founder & Lead Architect**, AgentiCraft (Oct 2024 – Present)
+- **Founder & Lead Architect**, AgentiCraft (May 2025 – Present)
 - **AI & Infrastructure Engineer**, Visual Arena, Gothenburg (Nov 2023 – Oct 2024)
 - **AI Performance Engineering**, Nebius Academy, Tel Aviv University (Mar 2026 – Present)
 - **Advanced Data Science & AI** (Y-DATA), Nebius Academy, Tel Aviv University (Nov 2023 – Aug 2024)
@@ -80,4 +81,4 @@ Validated across **~34,000 LLM experiments** spanning 13 coordination topologies
 
 English (Fluent) · Hebrew (Fluent) · Arabic (Native)
 
-*Last updated: April 2026*
+*Last updated: May 2026*
